@@ -7,4 +7,3 @@ RUN apt-get update && apt-get install -y nodejs
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 RUN npm install -g grunt-cli
-COPY ./cms-backend .
