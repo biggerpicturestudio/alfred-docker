@@ -1,5 +1,5 @@
-FROM nanoninja/php-fpm:7.3.6
-COPY --from=composer:1.9.0 /usr/bin/composer /usr/bin/composer
+FROM nanoninja/php-fpm:7.4.10
+COPY --from=composer:1.10.1 /usr/bin/composer /usr/bin/composer
 
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 RUN apt-get update && apt-get install -y nodejs
